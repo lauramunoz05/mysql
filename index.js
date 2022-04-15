@@ -18,7 +18,7 @@ app.use('/api/', require("./routes/productos"));
 app.use('/api/', require("./routes/sedes"));;
 
 // PORT 
-app.set('port', process.env.port || 301);
+app.set('port', process.env.PORT || 301);
 
 app.listen(app.get('port'), () => {
     console.log(`servidor corriendo en el puerto ${app.get("port")} `);
